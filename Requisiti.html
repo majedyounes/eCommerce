@@ -1,0 +1,256 @@
+<html>
+
+<head>
+<meta name=Titolo content="">
+<meta name="Parole chiave" content="">
+<meta http-equiv=Content-Type content="text/html; charset=macintosh">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Courier New";
+	panose-1:2 7 3 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:Times;
+	panose-1:2 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"\FF2D\FF33 \660E\671D";}
+@font-face
+	{font-family:"\FF2D\FF33 \660E\671D";}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:Cambria;}
+h1
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman";}
+span.Titolo1Carattere
+	{font-family:"Times New Roman";
+	font-weight:bold;}
+.MsoChpDefault
+	{font-family:Cambria;}
+@page WordSection1
+	{size:595.0pt 842.0pt;
+	margin:1.0cm 35.45pt 14.2pt 35.45pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=IT>
+
+<div class=WordSection1>
+
+<h1 align=center style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-align:center'><span style='font-size:16.0pt;color:black'>Sito
+di e-commerce</span></h1>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+font-family:Times'>Sviluppare un’applicazione che consenta di gestire le
+informazioni relative al funzionamento di un sito di e-commerce. Tutte le
+classi devono essere contenute nel package </span><span style='font-size:9.0pt;
+font-family:"Courier New"'>ecommerce</span><span style='font-size:10.0pt;
+font-family:Times'>.</span></p>
+
+<div class=MsoNormal align=center style='margin-bottom:3.0pt;text-align:center'><span
+style='font-size:10.0pt;font-family:Times'>
+
+<hr size=2 width=1080 style='width:1080.0pt' noshade style='color:black'
+align=center>
+
+</span></div>
+
+<p class=MsoNormal style='text-autospace:none'><b><span style='font-family:
+Times'>R1. Categorie e prodotti</span></b></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+font-family:Times'>L’applicazione viene gestita mediante un’istanza della
+classe </span><span style='font-size:9.0pt;font-family:"Courier New"'>Sito</span><span
+style='font-size:10.0pt;font-family:Times'>. Il sito organizza i prodotti gestiti
+in categorie. Per definire una nuova categoria si utilizza il metodo <b>nuovaCategoria()</b>
+della classe </span><span style='font-size:9.0pt;font-family:"Courier New"'>Sito</span><span
+style='font-size:10.0pt;font-family:Times'>, che riceve come parametro il nome
+della categoria, ad esempio “Libri”, “Elettronica”, ecc. Il metodo <b>elencoCategorie()</b>
+restituisce una collezione di stringhe, ordinate alfabeticamente, rappresentanti
+le categorie gestite. I prodotti sono rappresentati dalla classe </span><span
+style='font-size:9.0pt;font-family:"Courier New"'>Prodotto</span><span
+style='font-size:10.0pt;font-family:Times'>. </span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+font-family:Times'>I nuovi prodotti vengono definiti utilizzando il metodo <b>nuovoProdotto()</b>
+della classe </span><span style='font-size:9.0pt;font-family:"Courier New"'>Sito</span><span
+style='font-size:10.0pt;font-family:Times'>, che riceve come parametri il nome
+della categoria ed il nome, la descrizione ed il prezzo del prodotto. Il metodo
+assegna automaticamente un codice identificativo al prodotto, composto
+dall’iniziale (maiuscola) della categoria e da un codice numerico progressivo a
+partire da </span><span style='font-size:9.0pt;font-family:"Courier New"'>100</span><span
+style='font-size:10.0pt;font-family:Times'> (indipendente dalla categoria) espresso
+su cinque cifre. Ad esempio, il codice assegnato al primo prodotto della
+categoria </span><span style='font-size:9.0pt;font-family:"Courier New"'>Libri</span><span
+style='font-size:10.0pt;font-family:Times'> sara’ </span><span
+style='font-size:9.0pt;font-family:"Courier New"'>L00100</span><span
+style='font-size:10.0pt;font-family:Times'>, mentre quello assegnato al primo
+prodotto della categoria </span><span style='font-size:9.0pt;font-family:"Courier New"'>Elettronica</span><span
+style='font-size:10.0pt;font-family:Times'> sara’ </span><span
+style='font-size:9.0pt;font-family:"Courier New"'>E00101</span><span
+style='font-size:10.0pt;font-family:Times'> Non sono previste categorie con la
+stessa iniziale. Nel caso in cui la categoria non sia gia’ presente, questa
+viene automaticamente definita. Il metodo, che non effettua alcun controllo per
+verificare l’eventuale presenza di prodotti con lo stesso nome, descrizione,
+ecc., restituisce il codice prodotto assegnato. La classe </span><span
+style='font-size:9.0pt;font-family:"Courier New"'>Prodotto</span><span
+style='font-size:10.0pt;font-family:Times'> dispone di opportuni metodi getter
+per accedere alle suddette informazioni. </span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+font-family:Times'>Il metodo <b>cercaProdotto()</b> della classe </span><span
+style='font-size:9.0pt;font-family:"Courier New"'>Sito</span><span
+style='font-size:10.0pt;font-family:Times'> riceve come parametro una stringa e
+restituisce l’istanza di classe </span><span style='font-size:9.0pt;font-family:
+"Courier New"'>Prodotto</span><span style='font-size:10.0pt;font-family:Times'>
+corrispondente ad un qualsivoglia prodotto che contenga la stringa cercata nel
+codice, nel nome o nella descrizione, senza distinguere tra maiuscole e
+minuscole (</span><span style='font-size:9.0pt;font-family:"Courier New"'>null</span><span
+style='font-size:10.0pt;font-family:Times'>, se non viene trovato nulla). I
+metodi <b>elencoProdottiPerNome()</b> ed <b>elencoProdottiPerPrezzo()</b> della
+classe </span><span style='font-size:9.0pt;font-family:"Courier New"'>Sito</span><span
+style='font-size:10.0pt;font-family:Times'> restituiscono una collezione di oggetti
+di tipo </span><span style='font-size:9.0pt;font-family:"Courier New"'>Prodotto</span><span
+style='font-size:10.0pt;font-family:Times'> ordinati, rispettivamente, per nome
+e per prezzo (crescente). Per entrambi i metodi esiste una variante che riceve
+come parametro il nome di una categoria e restituisce una collezione dei soli
+prodotti appartenenti a quella categoria (con gli stessi ordinamenti menzionati
+precedentemente). </span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+font-family:Times'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><b><span style='font-family:
+Times'>R2. Utenti</span></b></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+font-family:Times'>Il sito gestisce sia utenti occasionali (rappresentati
+attraverso la classe </span><span style='font-size:9.0pt;font-family:"Courier New"'>Utente</span><span
+style='font-size:10.0pt;font-family:Times'>) che utenti registrati
+(rappresentati dalla classe </span><span style='font-size:9.0pt;font-family:
+"Courier New"'>UtenteRegistrato</span><span style='font-size:10.0pt;font-family:
+Times'>, derivata da </span><span style='font-size:9.0pt;font-family:"Courier New"'>Utente</span><span
+style='font-size:10.0pt;font-family:Times'>). Ogni utente è caratterizzato da
+nome, cognome, email ed indirizzo. Gli utenti registrati possiedono anche
+username e password. Le due classi mettono a disposizione opportuni metodi
+getter per accedere a tali informazioni. Per definire un nuovo utente si
+utilizza il metodo <b>nuovoUtente()</b> della classe </span><span
+style='font-size:9.0pt;font-family:"Courier New"'>Sito</span><span
+style='font-size:10.0pt;font-family:Times'>, che riceve come parametri le
+suddette informazioni e restituisce un oggetto di classe </span><span
+style='font-size:9.0pt;font-family:"Courier New"'>Utente</span><span
+style='font-size:10.0pt;font-family:Times'>. Nel caso in cui vengano passati
+anche username e password, il metodo restituisce un oggetto di classe </span><span
+style='font-size:9.0pt;font-family:"Courier New"'>UtenteRegistrato</span><span
+style='font-size:10.0pt;font-family:Times'>. Il metodo assegna automaticamente
+ad ogni utente un codice numerico progressivo a partire da 1. Non sono
+possibili utenti con la stessa email. Nel caso in cui l’email passata come
+parametro sia gia’ presente, l’operazione viene annullata. E’ possibile
+ricercare un utente attraverso il metodo <b>cercaUtente()</b>, che riceve come
+parametro un codice utente e restituisce l’oggetto corrispondente. Nel caso in
+cui l’utente non sia presente, viene scatenata una eccezione di tipo </span><span
+style='font-size:9.0pt;font-family:"Courier New"'>EccezioneUtenteInesistente</span><span
+style='font-size:10.0pt;font-family:Times'>. </span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+font-family:Times'>Un utente registrato puo’ effettuare il login attraverso il
+metodo <b>login()</b> della classe </span><span style='font-size:9.0pt;
+font-family:"Courier New"'>UtenteRegistrato</span><span style='font-size:10.0pt;
+font-family:Times'>, che riceve come parametri username e password. Se i valori
+passati come parametri coincidono con quelli memorizzati, il login va a buon
+fine, altrimenti viene scatenata una eccezione di tipo </span><span
+style='font-size:9.0pt;font-family:"Courier New"'>EccezioneLoginFallito</span><span
+style='font-size:10.0pt;font-family:Times'>. Per effettuare il logout si
+utilizza il metodo <b>logout()</b>. La classe </span><span style='font-size:
+9.0pt;font-family:"Courier New"'>UtenteRegistrato</span><span style='font-size:
+10.0pt;font-family:Times'> tiene traccia dello stato (loggato/non loggato),
+accessibile attraverso il relativo metodo getter.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+font-family:Times'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><b><span style='font-family:
+Times'>R3. Acquisti </span></b></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+font-family:Times'>Gli utenti possono selezionare i prodotti che intendono
+acquistare attraverso il metodo <b>selezionaProdotto()</b> della classe </span><span
+style='font-size:9.0pt;font-family:"Courier New"'>Utente</span><span
+style='font-size:10.0pt;font-family:Times'>. Il metodo riceve come parametro il
+prodotto da acquistare e lo inserisce nel carrello dell’utente. L’utente puo’
+decidere di acquistare piu’ unita’ dello stesso prodotto attraverso invocazioni
+successive del suddetto metodo. Per conoscere il contenuto del carrello di un
+particolare utente è possibile utilizzare il metodo <b>dettagliCarrello()</b>
+della classe </span><span style='font-size:9.0pt;font-family:"Courier New"'>Sito</span><span
+style='font-size:10.0pt;font-family:Times'>, che riceve come parametro il
+codice dell’utente e restituisce una stringa che in ogni riga riporta, separati
+da spazio, il codice prodotto, il prezzo e la quantita’ per ogni singolo
+prodotto selezionato. Le righe sono ordinate per codice prodotto e, ad
+esclusione dell’ultima, sono terminate da </span><span style='font-size:9.0pt;
+font-family:"Courier New"'>\n</span><span style='font-size:10.0pt;font-family:
+Times'>.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+font-family:Times'>E’ possibile procedere con il pagamento degli oggetti nel
+carrello attraverso il metodo <b>paga()</b> della classe </span><span
+style='font-size:9.0pt;font-family:"Courier New"'>Utente</span><span
+style='font-size:10.0pt;font-family:Times'>, che riceve come parametro la data
+del pagamento sotto forma di stringa nel formato </span><span style='font-size:
+9.0pt;font-family:"Courier New"'>AAAAMMGG</span><span style='font-size:10.0pt;
+font-family:Times'>. Il metodo restituisce il valore totale del carrello e, a
+pagamento effettuato, svuota il carrello. Nel caso di un utente registrato, nel
+caso in cui questo sia loggato il sito memorizza le informazioni relative
+all’acquisto. In particolare, quando il metodo <b>paga()</b> della classe </span><span
+style='font-size:9.0pt;font-family:"Courier New"'>UtenteRegistrato</span><span
+style='font-size:10.0pt;font-family:Times'> è invocato, viene tenuta traccia
+della data del pagamento e del suo ammontare. Il metodo <b>storicoAcquisti()</b>
+della classe </span><span style='font-size:9.0pt;font-family:"Courier New"'>UtenteRegistrato</span><span
+style='font-size:10.0pt;font-family:Times'> restituisce una stringa contenente
+i diversi acquisti effettuati dall’utente nella forma data acquisto, spazio,
+valore dell’acquisto. I diversi acquisti sono riportati uno di seguito
+all’altro, separati da punto e virgola, ed ordinati per data e prezzo
+(crescenti). </span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+font-family:Times'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><b><span style='font-family:
+Times'>R4. Caricamento da file</span></b></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+font-family:Times'>Il metodo <b>leggiFile()</b> della classe </span><span
+style='font-size:9.0pt;font-family:"Courier New"'>Sito</span><span
+style='font-size:10.0pt;font-family:Times'> permette di leggere da file alcune
+informazioni relative al funzionamento del sito e memorizzarle nella relativa
+struttura dati. In particolare, il metodo riceve come parametro il percorso di
+un file testuale organizzato per righe, dove ogni riga puo’ riportare le
+informazioni relative ad un prodotto o ad un utente (registrato o meno). Si
+assuma che le informazioni siano separate da un punto e virgola. &nbsp;Le righe
+relative ad un prodotto cominciano con la lettera </span><span
+style='font-size:9.0pt;font-family:"Courier New"'>P</span><span
+style='font-size:10.0pt;font-family:Times'>, seguita da categoria, nome,
+descrizione e prezzo. Le righe relative agli utenti cominciano invece con la
+lettera </span><span style='font-size:9.0pt;font-family:"Courier New"'>U</span><span
+style='font-size:10.0pt;font-family:Times'>, seguita da nome, cognome, email,
+indirizzo e, nel caso di utenti registrati, email e password. Il metodo deve
+poter scartare eventuali righe caratterizzate da errori di formato e procedere nell’elaborazione
+del file. Si assuma che il file possa fare riferimento categorie non (ancora)
+definite. </span></p>
+
+</div>
+
+</body>
+
+</html>
